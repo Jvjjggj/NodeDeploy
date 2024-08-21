@@ -1,0 +1,136 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App-header {
+  background-color: #007BFF;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.mentor-list {
+  margin-bottom: 40px;
+}
+
+.mentor-list h2, .booking-form h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.mentors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.mentor-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+.mentor-card h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.mentor-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.booking-form {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.booking-form input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.booking-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.booking-form button {
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mentors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mentor-card {
+    width: 90%;
+  }
+
+  .booking-form {
+    width: 90%;
+    padding: 20px;
+  }
+}
